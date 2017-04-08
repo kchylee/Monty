@@ -1,12 +1,13 @@
 var https = require('https');
 
 var options = {
-  host: 'www.example.org',
+  host: 'www.example.com',
   path: '/'
 };
 
-var callback = function(){
+var callback = function(response){
   console.log("In response handler callback!");
+  console.log("Response: ", response)
 }
 
 console.log("I'm about to make the request!");
